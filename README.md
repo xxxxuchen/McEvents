@@ -5,8 +5,9 @@
 
 
 ## How to start the server
+- Inside the root folder and frontend folder, run `npm install` if you haven't installed the dependency
 
-run `node app.js` and `node app-api.js` in two terminal
+- Inside the root folder, run `node app.js` and `node app-api.js` in two terminal
 
 
 ## How to visist the website
