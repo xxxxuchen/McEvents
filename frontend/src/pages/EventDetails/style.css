@@ -1,0 +1,111 @@
+.pageContainer * {
+  /*border: 1px solid red;*/
+}
+.pageContainer {
+  padding: 30px;
+  width: auto;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  padding: 40px;
+  background: white;
+}
+.infoText {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+.descSection {
+  flex: 0 0 45vw;
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  margin-right: 15px;
+}
+.eventImage {
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px;
+}
+.organizerBox {
+  background: white;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 25px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.allInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 0 0 25vw;
+  height: auto;
+  padding: 0px;
+  margin-left: 30px;
+  min-width: 400px;
+}
+.organizerPfp {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-inline: 30px;
+  width: auto;
+  height: 8vw;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.modalButtonHolder {
+  display: flex;
+  justify-content: right;
+}
+@media screen and (max-width: 1400px) {
+  .descSection {
+    flex: 0 0 80vw;
+    padding: 40px;
+    margin-inline: 0;
+  }
+  .allInfo {
+    margin: 0;
+    margin-top: 10px;
+    flex: 0 0 80vw;
+  }
+}

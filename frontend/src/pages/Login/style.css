@@ -1,0 +1,48 @@
+.login-container {
+  position: relative;
+  height: 100vh;
+}
+
+.login-form {
+  max-width: 400px;
+  border-top: 5px solid var(--primary-brand--500);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-title {
+  color: var(--primary-brand--500);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+  height: 8rem;
+}
+
+.login-container h3 {
+  text-align: center;
+}
+.login-container p {
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+.submit-btn {
+  margin-top: 1rem;
+}
+
+.member-btn {
+  background: transparent;
+  border: transparent;
+  color: var(--primary-brand--500);
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-left: 0.3rem;
+}

@@ -1,0 +1,153 @@
+/* General Dashboard Layout */
+.dashboard-container {
+  font-family: "Arial", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+/* Hero Section */
+.dashboard-hero {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-container {
+  margin-top: 5px;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.dashboard-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  margin-top: 10px;
+}
+
+/* Filter Form */
+.filter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter-input {
+  padding: 12px 15px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: box-shadow 0.2s ease;
+}
+
+.filter-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter-checkbox-label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+}
+
+.filter-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-button:hover {
+  background-color: #0284c7;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  ;
+  gap: 20px;
+}
+
+/* EventCard */
+.event-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.event-card p {
+  font-size: 14px;
+  color: #475569;
+  margin: 5px 0;
+}
+
+.select-input {
+  max-width: 35vh;
+  width: 275px;
+  height: 47px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: box-shadow 0.2s ease;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1170px) {
+  .filter-form {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,238 @@
+/* add global styles in this file */
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Sofadi+One&display=swap";
+
+:root {
+  /* brand color */
+  --primary-brand--400: #e34646;
+  --primary-brand--500: #e03131;
+  --primary-brand--700: #ca2c2c;
+  --primary-background: #f2f2f2;
+  --secondary-background: #3b3b3b;
+  --third-background: #555;
+
+  /* font color */
+  --title-text: #fff;
+  --primary-text: #252d38;
+  --secondary-text: #808080;
+  --light-text: #a0aab5;
+  --enhance-text: #e37f47;
+
+  /* other colors */
+  --primary-blue: #267fff;
+  --brand-orange: #ffc044;
+  --brand-red: #f14949;
+  --brand-green: #63bd54;
+  --white: #fff;
+
+  /* grey */
+  --grey-50: #f0f4f8;
+  --grey-100: #d9e2ec;
+  --grey-200: #bcccdc;
+  --grey-300: #9fb3c8;
+  --grey-400: #829ab1;
+  --grey-500: #627d98;
+  --grey-600: #486581;
+  --grey-700: #334e68;
+  --grey-800: #243b53;
+  --grey-900: #102a43;
+
+  /* secondary button color*/
+  --dark: #e2e2e2;
+
+  /* shadow */
+  --shadow-1: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-3: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  font-weight: 400;
+  color: var(--primary-text);
+  background-color: var(--primary-background);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+select:disabled,
+input:disabled {
+  background-color: var(--grey-200);
+  color: var(--grey-500);
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--primary-brand-500);
+  outline-offset: -1px;
+}
+
+button:has(svg) {
+  line-height: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* buttons */
+.btn {
+  color: var(--white);
+  background: var(--primary-brand--500);
+  border: transparent;
+  border-radius: 0.25rem;
+  padding: 0.375rem 1rem;
+  box-shadow: var(--shadow-1);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--primary-brand--700);
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+}
+
+.btn-fullWidth {
+  display: block;
+  width: 100%;
+}
+
+.btn-secondary {
+  background: white;
+  border: 1px solid var(--primary-brand--500);
+  color: var(--primary-brand--500);
+  border-radius: 0.25rem;
+  padding: 0.375rem 1rem;
+  box-shadow: var(--shadow-1);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  box-shadow: var(--shadow-2);
+  color: var(--primary-brand--700);
+  background: var(--dark);
+  cursor: pointer;
+}
+
+.form {
+  width: 90vw;
+  max-width: 500px;
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow-1);
+  padding: 2rem 2.5rem;
+  transition: 0.3s ease-in-out all;
+}
+
+.form:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  background: var(--primary-background);
+  border: 1px solid var(--grey-200);
+}
+
+.form-input,
+.form-select,
+.btn--fullWidth {
+  height: 35px;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+
+.skeleton {
+  height: 80vh;
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--grey-800);
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}

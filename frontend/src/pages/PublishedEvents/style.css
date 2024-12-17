@@ -1,0 +1,86 @@
+.published-events-container {
+  margin: 24px auto;
+  max-width: 80vw;
+}
+
+.ant-card-cover img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0 0 0 0 !important;
+}
+
+.published-event-item .ant-card {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.published-event-item .ant-card:hover {
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.published-event-item .ant-card-body {
+  flex: 1;
+}
+
+.published-event-item .ant-descriptions-item-content {
+  word-break: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block !important;
+  max-width: 300px;
+}
+
+.published-event-item .ant-card-head {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--primary-brand--700);
+  color: white;
+}
+
+.published-event-item .ant-card-cover {
+  padding: 0 1px;
+}
+
+.published-event-item .ant-card {
+  margin-bottom: 64px;
+}
+
+.published-event-item .ant-card-actions > li {
+  margin: 0;
+}
+
+.published-event-item .anticon {
+  padding: 16px 0;
+}
+.ant-card-actions li:hover svg {
+  color: var(--primary-brand--500);
+}
+
+.ant-form-item-control-input {
+  margin-top: 4px;
+}
+
+.edit-form-buttons .ant-form-item-control-input-content {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+  .published-events-container {
+    max-width: 85vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .published-events-container {
+    max-width: 90vw;
+  }
+
+  .published-events-container .ant-card {
+    height: 100% !important;
+  }
+}

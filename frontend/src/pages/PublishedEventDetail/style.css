@@ -1,0 +1,38 @@
+.registration-container {
+  max-width: 65vw;
+  margin: 16px auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+.back-arrow {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+}
+
+.registration-details {
+  flex: 1;
+}
+.registration-details h2 {
+  margin-bottom: 16px;
+}
+
+.registration-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .registration-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+}

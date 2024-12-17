@@ -1,0 +1,49 @@
+.profileContainer {
+  padding: 30px;
+  width: auto;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.pfpSection {
+  flex: 0 0 20vw;
+}
+.pfpBox {
+  display: flex;
+  min-width: 350px;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-inline: 10px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.editSection {
+  flex: 0 1 45vw;
+  min-width: 300px;
+  background: white;
+  border-radius: 25px;
+  padding: 50px;
+  margin-left: 30px;
+}
+.saveWarning {
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1000px) {
+  .pfpSection {
+    flex: 0 0 80vw;
+    margin-bottom: 20px;
+  }
+  .editSection {
+    flex: 0 1 80vw;
+    margin-left: 0;
+  }
+}
