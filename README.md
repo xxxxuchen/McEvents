@@ -13,4 +13,5 @@
 ## How to visist the website
 http://fall2024-comp307-group09.cs.mcgill.ca/
 
-Make sure to allow insecure content in the site setting of Chrome
+- Make sure to allow insecure content in the site setting of Chrome
+- Make sure you are on McGill VPN
