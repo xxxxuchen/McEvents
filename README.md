@@ -1,7 +1,7 @@
 ## How to login to the MERN server
 
-chmod 400 cs307-group09-key
-ssh -i ~/comp307key/cs307-group09-key cs307-user@fall2024-comp307-group09.cs.mcgill.ca
+- chmod 400 cs307-group09-key
+- ssh -i ~/comp307key/cs307-group09-key cs307-user@fall2024-comp307-group09.cs.mcgill.ca
 
 
 ## How to start the server
